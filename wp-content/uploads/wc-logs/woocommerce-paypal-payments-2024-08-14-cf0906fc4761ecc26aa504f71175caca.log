@@ -1,0 +1,51 @@
+2024-08-14T03:39:33+00:00 DEBUG POST https://api-m.sandbox.paypal.com/v1/oauth2/token?grant_type=client_credentials
+Response Debug ID: f394767045595
+Response: Array
+(
+    [code] => 200
+    [message] => OK
+)
+
+2024-08-14T03:39:35+00:00 DEBUG GET https://api-m.sandbox.paypal.com/v1/customer/partners/MPMFHQTVMBZ6G/merchant-integrations/AG283VV6N8HEU
+Response Debug ID: f4088441c262a
+Response: Array
+(
+    [code] => 200
+    [message] => OK
+)
+
+2024-08-14T03:39:37+00:00 DEBUG GET https://api-m.sandbox.paypal.com/v1/customer/partners/MPMFHQTVMBZ6G/merchant-integrations/AG283VV6N8HEU
+Response Debug ID: f38021956c059
+Response: Array
+(
+    [code] => 200
+    [message] => OK
+)
+
+2024-08-14T03:39:43+00:00 DEBUG Loaded onbording URL from cache: production-ppcp
+2024-08-14T03:39:43+00:00 DEBUG Loaded onbording URL from cache: production-express_checkout
+2024-08-14T03:39:43+00:00 DEBUG GET https://api-m.sandbox.paypal.com/v1/notifications/webhooks
+Response Debug ID: f3742684b9a28
+Response: Array
+(
+    [code] => 200
+    [message] => OK
+)
+
+2024-08-14T03:42:24+00:00 DEBUG POST https://api-m.sandbox.paypal.com/v2/checkout/orders
+Request Body: {"intent":"CAPTURE","purchase_units":[{"reference_id":"default","amount":{"currency_code":"USD","value":"40.00","breakdown":{"item_total":{"currency_code":"USD","value":"33.90"},"shipping":{"currency_code":"USD","value":"0.00"},"tax_total":{"currency_code":"USD","value":"6.10"}}},"description":"","items":[{"name":"Camiseta del equipo - Negro","unit_amount":{"currency_code":"USD","value":"16.95"},"quantity":1,"description":"","sku":"","category":"PHYSICAL_GOODS","url":"http:\/\/localhost:8882\/?product=camiseta-del-equipo&attribute_pa_color=negro","cart_item_key":"e768e1c38b79542360dadbb26724e2bf"},{"name":"Camiseta del equipo - Azul","unit_amount":{"currency_code":"USD","value":"16.95"},"quantity":1,"description":"","sku":"","category":"PHYSICAL_GOODS","url":"http:\/\/localhost:8882\/?product=camiseta-del-equipo&attribute_pa_color=azul","cart_item_key":"6170fb39fa466d9e64746f424eeaed23"}],"shipping":{"name":{"full_name":"fra mamani"},"address":{"country_code":"PE","address_line_1":"54","admin_area_1":"CAL","admin_area_2":"Callao","postal_code":"07006"}},"custom_id":"pcp_customer_1","soft_descriptor":"dcv shop"}],"application_context":{"user_action":"CONTINUE","shipping_preference":"SET_PROVIDED_ADDRESS","landing_page":"BILLING","locale":"es-ES","brand_name":"DCV SHOP","return_url":"http:\/\/localhost:8882\/?wc-ajax=ppc-return-url","cancel_url":"http:\/\/localhost:8882\/?page_id=9","payment_method":{"payee_preferred":"IMMEDIATE_PAYMENT_REQUIRED"}}}
+Response Debug ID: f275382f7b89c
+Response: Array
+(
+    [code] => 201
+    [message] => Created
+)
+
+2024-08-14T13:37:12+00:00 DEBUG POST https://api-m.sandbox.paypal.com/v1/oauth2/token?grant_type=client_credentials
+Response Debug ID: f906701b12fc0
+Response: Array
+(
+    [code] => 200
+    [message] => OK
+)
+
